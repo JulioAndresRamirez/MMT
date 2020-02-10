@@ -363,9 +363,14 @@
         const links_menu = document.querySelectorAll("#link_menu")
         let valueDisplay;
 
-        /* links_menu.forEach(element => {
-            element.addEventListener('click', toggleMenu, false);
-        }); */
+        links_menu.forEach(element => {
+            element.addEventListener('click', function () {
+                menu.classList.remove('is-active');
+                document.querySelector(".menu_mobile").style.display = "none";
+                valueDisplay = document.querySelector(".menu_mobile").style.display
+
+            });
+        });
 
         // event
         menu.addEventListener('click', toggleMenu, false);
@@ -379,12 +384,15 @@
 
         // method
         function toggleMenu(event) {
-            this.classList.toggle('is-active');
+
+            //this.classList.toggle('is-active');
 
             if (valueDisplay === "none" || valueDisplay === "") {
                 document.querySelector(".menu_mobile").style.display = "flex";
+                this.classList.add("is-active")
             } else {
                 document.querySelector(".menu_mobile").style.display = "none";
+                this.classList.remove("is-active")
             }
             event.preventDefault();
 

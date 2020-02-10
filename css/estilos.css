@@ -234,6 +234,8 @@ header .btn_close {
 }
 
 .hero_container img {
+    position: relative;
+    display: block;
     width: 45%;
 }
 
@@ -243,15 +245,16 @@ header .btn_close {
 
 .hero_texto h1 {
     font-weight: bold;
-    font-size: 55px;
-    line-height: calc(1.8 * 38px);
+    font-size: 3em;
+    line-height: calc(1.6 * 38px);
+    width: 92%;
 }
 
 .hero_texto p {
     width: 65%;
-    font-weight: 300;
+    font-weight: 700;
     color: var(--Color-pink);
-    font-size: 18px;
+    font-size: 1.5em;
     padding-top: 10px;
     padding-bottom: 40px;
 }

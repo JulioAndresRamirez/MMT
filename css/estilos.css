@@ -344,7 +344,7 @@ header .btn_close {
 }
 
 .lineas .titulo_lineas {
-    width: 40%;
+    width: 35%;
     color: var(--Color-pink);
     font-size: 1.2em;
     font-weight: 600;
@@ -354,7 +354,7 @@ header .btn_close {
 
 .lineas .contenido_lineas {
     padding-left: 15px;
-    width: 60%;
+    width: 65%;
     align-self: flex-start;
 }
 
